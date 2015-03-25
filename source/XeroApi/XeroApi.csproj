@@ -61,12 +61,16 @@
     <Compile Include="Exceptions\ApiResponseException.cs" />
     <Compile Include="MimeTypes.cs" />
     <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\AccountBase.cs" />
     <Compile Include="Model\Address.cs" />
     <Compile Include="Model\ApiException.cs" />
     <Compile Include="Model\Attachment.cs" />
+    <Compile Include="Model\Balances.cs" />
     <Compile Include="Model\BankTransaction.cs" />
+    <Compile Include="Model\BatchPayments.cs" />
     <Compile Include="Model\BrandingTheme.cs" />
     <Compile Include="Model\ContactGroup.cs" />
+    <Compile Include="Model\ContactPerson.cs" />
     <Compile Include="Model\CreditNote.cs" />
     <Compile Include="Model\Currency.cs" />
     <Compile Include="Model\Employee.cs" />
@@ -83,6 +87,8 @@
     <Compile Include="Model\ModelSerializer.cs" />
     <Compile Include="Model\ModelTreeNavigator.cs" />
     <Compile Include="Model\Payment.cs" />
+    <Compile Include="Model\PaymentTermBase.cs" />
+    <Compile Include="Model\PaymentTerms.cs" />
     <Compile Include="Model\Phone.cs" />
     <Compile Include="Model\Receipt.cs" />
     <Compile Include="Model\Report.cs" />
@@ -98,6 +104,7 @@
     <Compile Include="Model\Reporting\PublishedReportBase.cs" />
     <Compile Include="Model\Reporting\ReportQueryDescription.cs" />
     <Compile Include="Model\Reporting\TrialBalanceReport.cs" />
+    <Compile Include="Model\TaxComponent.cs" />
     <Compile Include="Model\TaxRate.cs" />
     <Compile Include="Model\TrackingCategory.cs" />
     <Compile Include="Model\User.cs" />

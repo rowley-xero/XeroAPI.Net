@@ -24,6 +24,8 @@ namespace XeroApi.Model
         public string EmailAddress { get; set; }
         
         public string SkypeUserName { get; set; }
+
+        public ContactPersons ContactPersons { get; set; }
         
         public string BankAccountDetails { get; set; }
         
@@ -46,6 +48,12 @@ namespace XeroApi.Model
         public bool IsCustomer { get; set; }
         
         public string DefaultCurrency { get;  set; }
+
+        public Balances Balances { get; set; }
+
+        public BatchPayments BatchPayments { get; set; }
+
+        public PaymentTerms PaymentTerms { get; set; }
 
         public override string ToString()
         {

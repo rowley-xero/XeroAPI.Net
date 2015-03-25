@@ -20,6 +20,8 @@ namespace XeroApi.Model
         public bool? SentToContact { get; set; }
 
         public decimal? AppliedAmount { get; set; }
+        
+        public decimal RemainingCredit { get; set; }
 
         public decimal? CurrencyRate { get; set; }
 
@@ -46,9 +48,23 @@ namespace XeroApi.Model
         public virtual string CurrencyCode { get; set; }
 
         public DateTime? FullyPaidOnDate { get; set; }
+
+        public Allocations Allocations { get; set; }
     }
     
     public class CreditNotes : ModelList<CreditNote>
     {
     }
+
+    public class Allocation : EndpointModelBase
+    {
+        public decimal AppliedAmount { get; set; }
+        public DateTime Date { get; set; }
+        public Invoice Invoice { get; set; }
+    }
+
+    public class Allocations : ModelList<Allocation>
+    {
+    }
+
 }
